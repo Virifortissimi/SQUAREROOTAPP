@@ -1,0 +1,41 @@
+@{
+    ViewData["Title"] = "Calculate Square Root";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Calculate Highest Square Root Here</h1>
+    <p class="text-secondary">Put in two numbers and get the highest square root value here</p>
+</div>
+
+<div class="text-center">
+    <form asp-controller="Calc" asp-action="Sqrt" method="POST">
+        <input type="number" name="firstNumber" placeholder="First Number" />
+        <input type="number" name="secondNumber" placeholder="Second Number" />
+
+        <button type="submit">Check Highest Number</button>
+    </form>
+</div>
+
+
+@{
+    if (ViewBag.highestSqrtValue != null)
+    {
+        <div class="text-center text-success">
+            @{
+                if (ViewBag.firstSqrtValue > ViewBag.secondSqrtValue)
+                {
+                    <h2>The number @ViewBag.numberOneValue with Square root @ViewBag.firstSqrtValue has a higher square root than the number @ViewBag.numberTwoValue with square root @ViewBag.secondSqrtValue</h2>
+                }
+                else if (ViewBag.secondSqrtValue > ViewBag.firstSqrtValue)
+                {
+                    <h2>The number @ViewBag.numberTwoValue with Square root @ViewBag.secondSqrtValue has a higher square root than the number @ViewBag.numberOneValue with square root @ViewBag.firstSqrtValue</h2>
+                }
+                else
+                {
+                    <h2>The number @ViewBag.numberOneValue with Square root @ViewBag.firstSqrtValue has an equal square root with the number @ViewBag.numberTwoValue with square root @ViewBag.secondSqrtValue</h2>
+                }
+            }
+            
+        </div>    
+    }
+}
