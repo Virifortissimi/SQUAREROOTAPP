@@ -17,6 +17,7 @@ namespace SqrtApp.Controllers
             
                 try
                 {
+                    // Checking if Negative Number was inserted and Parsing Error Message to User
                     if (Convert.ToInt32(firstNumber) < 0 || Convert.ToInt32(secondNumber) < 0)
                     {
                         string ErrorMessage = "Please insert a positive number!!";
@@ -25,6 +26,7 @@ namespace SqrtApp.Controllers
                     }
                     else
                     {
+                        //making Calculations
                         int numberOne = int.Parse(firstNumber);
                         int numberTwo = int.Parse(secondNumber);
                         double firstSqrt = Math.Sqrt(numberOne);
@@ -47,7 +49,7 @@ namespace SqrtApp.Controllers
                 }
                 catch (FormatException ex)
                 {
-                    // Console.WriteLine(ex.Message);
+                    // Handling FormatExceptions and parsing message to User
                     var exceptionValue = ex.Message;
                     ViewBag.FormatError = "Please Insert a number instead. " + exceptionValue;
                 }
