@@ -9,8 +9,8 @@
 
 <div class="text-center">
     <form asp-controller="Calc" asp-action="Sqrt" method="POST">
-        <input type="number" name="firstNumber" placeholder="First Number" />
-        <input type="number" name="secondNumber" placeholder="Second Number" />
+        <input type="text" name="firstNumber" placeholder="First Number" />
+        <input type="text" name="secondNumber" placeholder="Second Number" />
 
         <button type="submit">Check Highest Number</button>
     </form>
@@ -18,9 +18,27 @@
 
 
 @{
-    if (ViewBag.highestSqrtValue != null)
+    if (ViewBag.ErrorMessageValue != null)
     {
-        <div class="text-center text-success">
+        <div class="text-center text-danger mt-2">
+            <h2>@ViewBag.ErrorMessageValue</h2>
+        </div>
+    }
+}
+
+@{
+    if (ViewBag.FormatError != null)
+    {
+        <div class="text-center text-danger mt-2">
+            <h2>@ViewBag.FormatError</h2>
+        </div>
+    }
+}
+
+@{
+    if (ViewBag.Result != null)
+    {
+        <div class="text-center text-success mt-2">
             @{
                 if (ViewBag.firstSqrtValue > ViewBag.secondSqrtValue)
                 {
@@ -30,9 +48,10 @@
                 {
                     <h2>The number @ViewBag.numberTwoValue with Square root @ViewBag.secondSqrtValue has a higher square root than the number @ViewBag.numberOneValue with square root @ViewBag.firstSqrtValue</h2>
                 }
-                else
+                else if (ViewBag.secondSqrtValue == ViewBag.firstSqrtValue)
                 {
                     <h2>The number @ViewBag.numberOneValue with Square root @ViewBag.firstSqrtValue has an equal square root with the number @ViewBag.numberTwoValue with square root @ViewBag.secondSqrtValue</h2>
+                    <p>You may please enter another value</p>
                 }
             }
             
