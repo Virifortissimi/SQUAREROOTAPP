@@ -16,7 +16,7 @@
     </form>
 </div>
 
-
+@* Erro Message For Negative Numbers *@
 @{
     if (ViewBag.ErrorMessageValue != null)
     {
@@ -26,6 +26,8 @@
     }
 }
 
+
+@* Error Message For Incorrect Input *@
 @{
     if (ViewBag.FormatError != null)
     {
@@ -35,6 +37,18 @@
     }
 }
 
+@* Error Message For Null Input *@
+@{
+    if (ViewBag.FormatErrorNullException != null)
+    {
+        <div class="text-center text-danger mt-2">
+            <h2>@ViewBag.FormatErrorNullException</h2>
+        </div>
+    }
+}
+
+
+@* Message For Calculations Result *@
 @{
     if (ViewBag.Result != null)
     {
