@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\SqrtApp.csproj": {}
+    "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\SqrtApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\SqrtApp.csproj": {
+    "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\SqrtApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\SqrtApp.csproj",
+        "projectUniqueName": "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\SqrtApp.csproj",
         "projectName": "SqrtApp",
-        "projectPath": "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\SqrtApp.csproj",
-        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\obj\\",
+        "projectPath": "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\SqrtApp.csproj",
+        "packagesPath": "C:\\Users\\SObomighie\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\SObomighie\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,6 +26,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -37,6 +38,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,6 +49,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.7, 3.1.7]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -55,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100-rc.2.20479.15\\RuntimeIdentifierGraph.json"
         }
       }
     }
