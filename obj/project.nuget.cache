@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "XjMGHW0RlDLodfZqhmeFM1xfRCRPQxQ5rwxoyAeWFuO7Z+Z/DSkBJx25OpYZboXKEoXVyzlb+hv4YO/YBNakfA==",
+  "dgSpecHash": "y85AIa/4GOTyDBbiRvVOwYwzuFimKTgaNFjxoz/QtwpHkHy6ApRJwLpjLhK9H8lQSuDohLyYNLXD2F0Q1kTb5A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\User\\Desktop\\C#\\SQUAREROOTAPP\\SqrtApp.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\SObomighie\\repos\\SQUAREROOTAPP\\SqrtApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SObomighie\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.7\\microsoft.netcore.app.host.win-x64.3.1.7.nupkg.sha512"
+  ],
   "logs": []
 }

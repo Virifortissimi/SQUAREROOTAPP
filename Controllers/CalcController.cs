@@ -51,7 +51,7 @@ namespace SqrtApp.Controllers
                 {
                     // Handling FormatExceptions and parsing message to User
                     var exceptionValue = ex.Message;
-                    ViewBag.FormatError = "Please Insert a number instead and try again. ";
+                    ViewBag.FormatError = "Try again. ";
                 }
                 catch (ArgumentNullException ex)
                 {
